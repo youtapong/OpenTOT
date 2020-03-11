@@ -2,7 +2,7 @@
 
 function msgfunc(a){
 
-	alert(a);
-	print(a);
+	alert('Hello');
+	print('Hello');
 }
 ?>
