@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inpt1" >
+    <label> / </label>
+    <input type="text" id="inpt2">
+    <label> = </label>
+    
+    <input type="button" value="Calculate" onclick="Division()">
+    <br/>
+    <span id="res"></span>
+    <script>
+        function Division(){
+            
+            a1 = parseFloat(document.getElementById("inpt1").value);
+            b1 = parseFloat(document.getElementById("inpt2").value);
+
+
+            if(a1==0 || b1 ==0){
+                alert("Noooo! Don't Input Number 0.");
+                document.getElementById("inpt1").value = '';
+                document.getElementById("inpt2").value = '';
+            }
+            else{
+                document.getElementById("res").innerHTML = "Result:" + b1/a1;
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
